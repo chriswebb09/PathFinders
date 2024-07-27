@@ -9,8 +9,6 @@ import ArcGIS
 import CoreLocation
 import SwiftUI
 
-
-
 @MainActor
 class CompassMapViewModel: ObservableObject {
     /// Map of Esri Campus indoors.
