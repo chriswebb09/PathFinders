@@ -14,6 +14,9 @@
 		9555B6562C547AD200BE8D26 /* PathFindersMobile_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9555B6552C547AD200BE8D26 /* PathFindersMobile_iOSTests.swift */; };
 		9555B6602C547AD200BE8D26 /* PathFindersMobile_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9555B65F2C547AD200BE8D26 /* PathFindersMobile_iOSUITests.swift */; };
 		9555B6622C547AD200BE8D26 /* PathFindersMobile_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9555B6612C547AD200BE8D26 /* PathFindersMobile_iOSUITestsLaunchTests.swift */; };
+		9555B66F2C547BA000BE8D26 /* CompassMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9555B66E2C547BA000BE8D26 /* CompassMapView.swift */; };
+		9555B6712C547BAD00BE8D26 /* CompassMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9555B6702C547BAD00BE8D26 /* CompassMapViewModel.swift */; };
+		9555B6742C547C3000BE8D26 /* ArcGISToolkit in Frameworks */ = {isa = PBXBuildFile; productRef = 9555B6732C547C3000BE8D26 /* ArcGISToolkit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		9555B65B2C547AD200BE8D26 /* PathFindersMobile-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PathFindersMobile-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9555B65F2C547AD200BE8D26 /* PathFindersMobile_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathFindersMobile_iOSUITests.swift; sourceTree = "<group>"; };
 		9555B6612C547AD200BE8D26 /* PathFindersMobile_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathFindersMobile_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9555B66E2C547BA000BE8D26 /* CompassMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassMapView.swift; sourceTree = "<group>"; };
+		9555B6702C547BAD00BE8D26 /* CompassMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassMapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9555B6742C547C3000BE8D26 /* ArcGISToolkit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 			children = (
 				9555B6442C547ACF00BE8D26 /* AppDelegate.swift */,
 				9555B6462C547ACF00BE8D26 /* ContentView.swift */,
+				9555B66E2C547BA000BE8D26 /* CompassMapView.swift */,
+				9555B6702C547BAD00BE8D26 /* CompassMapViewModel.swift */,
 				9555B6482C547AD200BE8D26 /* Assets.xcassets */,
 				9555B64A2C547AD200BE8D26 /* Preview Content */,
 			);
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = "PathFindersMobile-iOS";
+			packageProductDependencies = (
+				9555B6732C547C3000BE8D26 /* ArcGISToolkit */,
+			);
 			productName = "PathFindersMobile-iOS";
 			productReference = 9555B6412C547ACF00BE8D26 /* PathFindersMobile-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 9555B6382C547ACF00BE8D26;
+			packageReferences = (
+				9555B6722C547C3000BE8D26 /* XCRemoteSwiftPackageReference "arcgis-maps-sdk-swift-toolkit" */,
+			);
 			productRefGroup = 9555B6422C547ACF00BE8D26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9555B6712C547BAD00BE8D26 /* CompassMapViewModel.swift in Sources */,
 				9555B6472C547ACF00BE8D26 /* ContentView.swift in Sources */,
+				9555B66F2C547BA000BE8D26 /* CompassMapView.swift in Sources */,
 				9555B6452C547ACF00BE8D26 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9555B6722C547C3000BE8D26 /* XCRemoteSwiftPackageReference "arcgis-maps-sdk-swift-toolkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Esri/arcgis-maps-sdk-swift-toolkit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 200.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9555B6732C547C3000BE8D26 /* ArcGISToolkit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9555B6722C547C3000BE8D26 /* XCRemoteSwiftPackageReference "arcgis-maps-sdk-swift-toolkit" */;
+			productName = ArcGISToolkit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9555B6392C547ACF00BE8D26 /* Project object */;
 }
