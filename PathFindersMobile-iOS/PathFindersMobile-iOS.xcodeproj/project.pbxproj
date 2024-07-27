@@ -17,6 +17,9 @@
 		9555B66F2C547BA000BE8D26 /* CompassMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9555B66E2C547BA000BE8D26 /* CompassMapView.swift */; };
 		9555B6712C547BAD00BE8D26 /* CompassMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9555B6702C547BAD00BE8D26 /* CompassMapViewModel.swift */; };
 		9555B6742C547C3000BE8D26 /* ArcGISToolkit in Frameworks */ = {isa = PBXBuildFile; productRef = 9555B6732C547C3000BE8D26 /* ArcGISToolkit */; };
+		9555B6762C548B6D00BE8D26 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9555B6752C548B6D00BE8D26 /* UIImage+Extensions.swift */; };
+		9555B6782C548B9F00BE8D26 /* RKPointPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9555B6772C548B9F00BE8D26 /* RKPointPin.swift */; };
+		9555B67A2C548BC200BE8D26 /* HostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9555B6792C548BC200BE8D26 /* HostingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		9555B6612C547AD200BE8D26 /* PathFindersMobile_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathFindersMobile_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9555B66E2C547BA000BE8D26 /* CompassMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassMapView.swift; sourceTree = "<group>"; };
 		9555B6702C547BAD00BE8D26 /* CompassMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassMapViewModel.swift; sourceTree = "<group>"; };
+		9555B6752C548B6D00BE8D26 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		9555B6772C548B9F00BE8D26 /* RKPointPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKPointPin.swift; sourceTree = "<group>"; };
+		9555B6792C548BC200BE8D26 /* HostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 			children = (
 				9555B6442C547ACF00BE8D26 /* AppDelegate.swift */,
 				9555B6462C547ACF00BE8D26 /* ContentView.swift */,
+				9555B6792C548BC200BE8D26 /* HostingView.swift */,
+				9555B6772C548B9F00BE8D26 /* RKPointPin.swift */,
+				9555B6752C548B6D00BE8D26 /* UIImage+Extensions.swift */,
 				9555B66E2C547BA000BE8D26 /* CompassMapView.swift */,
 				9555B6702C547BAD00BE8D26 /* CompassMapViewModel.swift */,
 				9555B6482C547AD200BE8D26 /* Assets.xcassets */,
@@ -273,7 +282,10 @@
 			files = (
 				9555B6712C547BAD00BE8D26 /* CompassMapViewModel.swift in Sources */,
 				9555B6472C547ACF00BE8D26 /* ContentView.swift in Sources */,
+				9555B6762C548B6D00BE8D26 /* UIImage+Extensions.swift in Sources */,
+				9555B6782C548B9F00BE8D26 /* RKPointPin.swift in Sources */,
 				9555B66F2C547BA000BE8D26 /* CompassMapView.swift in Sources */,
+				9555B67A2C548BC200BE8D26 /* HostingView.swift in Sources */,
 				9555B6452C547ACF00BE8D26 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

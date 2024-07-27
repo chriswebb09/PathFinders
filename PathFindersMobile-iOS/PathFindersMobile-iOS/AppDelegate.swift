@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import ArcGIS
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         // Create the SwiftUI view that provides the window contents.
+        ArcGISEnvironment.apiKey = APIKey("AAPKac37477218c5473ab48f5901ecce96d3dk3B9ptkd71k-lNWQUQhYEqmoCymT53ky1ABz4S7KE85wQ9KPVe2kRpr-lTRlKsg")
         let contentView = ContentView()
 
         // Use a UIHostingController as window root view controller.
