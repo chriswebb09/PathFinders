@@ -147,3 +147,26 @@ private extension URL {
 }
 
 
+//
+public class Model: ObservableObject {
+    let graphicsOverlay: GraphicsOverlay = {
+        let graphicsOverlay = GraphicsOverlay()
+        let polyline = Polyline(
+            points: [
+//              34.05676608168469, -117.19549119472504
+                Point(latitude: 34.05661052999521, longitude: -117.1952122449875),
+                Point(latitude: 34.05676608168469, longitude:-117.19522297382356),
+                Point(latitude:  34.05676608168469, longitude: -117.19549119472504),
+                Point(latitude: 34.05662830734559, longitude: -117.19549119472504),
+            ]
+        )
+        let polylineSymbol = SimpleLineSymbol(style: .solid, color: .green, width: 5.0)
+        
+        let polyGraphic = Graphic(geometry: polyline, symbol: polylineSymbol)
+        
+        graphicsOverlay.addGraphic(polyGraphic)
+
+        return graphicsOverlay
+
+    }()
+}
