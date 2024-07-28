@@ -11,12 +11,15 @@ import SwiftUI
 struct CompassMapView: View {
     /// The data model for the sample.
     @StateObject private var model = CompassMapViewModel()
+    
+    @StateObject public var graphicsOverlayModel = Model()
+    
     /// The error shown in the error alert.
     @State private var error: Error?
     
     var body: some View {
         MapViewReader { proxy in
-            MapView(map: model.map)
+            MapView(map: model.map, graphicsOverlays: [graphicsOverlayModel.graphicsOverlay])
                 .locationDisplay(model.locationDisplay)
                 .clipShape(Circle())
                 .overlay {

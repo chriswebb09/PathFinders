@@ -8,6 +8,7 @@
 import UIKit
 
 internal extension UIImage {
+    
     func tinted(color: UIColor) -> UIImage? {
         let image = withRenderingMode(.alwaysTemplate)
         let imageView = UIImageView(image: image)
