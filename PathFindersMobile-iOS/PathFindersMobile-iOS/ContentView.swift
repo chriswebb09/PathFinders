@@ -59,7 +59,7 @@ struct ARViewContainer: UIViewRepresentable {
         let initialWidth: Float = 0.1
         let anchor =  createFirstEntity(initialDepth: initialDepth, initialDistance: initialDistance, initialWidth: initialWidth)
         arView.scene.anchors.append(anchor.0)
-        let depth2 = initialDepth + 16
+        let depth2 = initialDepth + 10
         let anchor2 = createNewEntity(initialWidth: initialWidth, initialDepth: initialDepth, depth2: depth2, model: anchor.1)
         let model2 = anchor2.1
         model2.transform.rotation = simd_quatf(angle: GLKMathDegreesToRadians(90), axis: SIMD3(x: 0, y: 1, z: 0))
